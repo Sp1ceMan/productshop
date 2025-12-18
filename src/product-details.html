@@ -7,6 +7,8 @@
     rel="stylesheet"
     href="my%20shop/style.css"
   >
+  <script src="my%20shop/script.js"></script>
+
 </head>
 <body>
 <header>
@@ -18,5 +20,39 @@
   </nav>
 </header>
 
+<main class="container">
+  <div class="product-detail-layout">
+    <div class="product-image-gallery">
+    <img src="my%20shop/images/images.jpg" alt="Футболка черная" class="main-image">
+    </div>
+    <div class="product-info-details">
+      <h1 class="product-title">Замняя футболка черная</h1>
+      <p class="product-price">10 999 тен.</p>
+
+      <p class="product-description">Идеальная ткань. Легкий дышащий лен.</p>
+    </div>
+
+    <div class="options-group">
+      <label for="size">Размер:</label>
+      <select
+        id="size">
+        <option value="">S</option>
+        <option value="">M</option>
+        <option value="">L</option>
+        <option value="">XL</option>
+      </select>
+    </div>
+    <div class="options-group">
+      <label for="quantity">Количество:</label>
+      <input type="number" id="quantity" value="1" min="1">
+    </div>
+    <button class="add-to-cart-button" onclick="addToCart('Базовая черная футболка', 2500)">Добавить в корзину</button>
+    <div class="shipping-info">
+      <p>🚛 **Бесплатная доставка** при заказе от 5000 руб.</p>
+      <p>🔁 **Легкий возврат** в течение 30 дней.</p>
+      </div>
+    </div>
+  </div>
+</main>
 </body>
 </html>

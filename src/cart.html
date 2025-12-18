@@ -7,6 +7,8 @@
     rel="stylesheet"
     href="my%20shop/style.css"
   >
+  <script src="my%20shop/script.js"></script>
+
 </head>
 <body>
 <header>
@@ -17,6 +19,32 @@
     <a href="cart.html">Корзина</a>
   </nav>
 </header>
+
+<main class="container">
+  <h1 style="margin-top: 20px;">Ваша Корзина</h1>
+
+  <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #f8f8f8;">
+        <th style="padding: 10px;">Товар</th>
+        <th style="padding: 10px;">Цена</th>
+        <th style="padding: 10px;">Кол-во</th>
+        <th style="padding: 10px;">Сумма</th>
+        <th style="padding: 10px;">Удалить</th>
+      </tr>
+    </thead>
+
+    <tbody id="cart-items-container">
+    </tbody>
+  </table>
+
+  <div style="margin-top: 20px; text-align: right; font-size: 1.2em;">
+    <strong>Итого к оплате: </strong>
+    <span id="cart-total">0</span> тнг.
+  </div>
+
+  <button class="checkout-btn" onclick="checkout()">Оформить заказ</button>
+</main>
 
 </body>
 </html>

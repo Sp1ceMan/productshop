@@ -7,6 +7,7 @@
     rel="stylesheet"
     href="my%20shop/style.css"
   >
+  <script src="my%20shop/script.js"></script>
 </head>
 <body>
 <header>
@@ -17,107 +18,19 @@
     <a href="cart.html">Корзина</a>
   </nav>
 </header>
+<main class="container">
+  <h1>Наш каталог</h1>
 
-  <main>
-  <section class="product-grid">
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
+<div class="filter-buttons" style="margin-bottom: 20px;">
+  <button onclick="filterProducts('all')">Все</button>
+  <button onclick="filterProducts('t-shirts')">Футболки</button>
+  <button onclick="filterProducts('pants')">Брюки</button>
+  <button onclick="filterProducts('hoodie')">Худи</button>
+</div>
 
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
+<div id="products-grid" class="product-list"></div>
+    </main>
 
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
+  </body>
 
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
-
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
-
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
-
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
-
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-    <div class="product-card">
-      <a href="product-details.html class="product-link">
-      <img src="my%20shop/images/images.jpg" alt="Черная кофта" class="product-image">
-      </a>
-
-      <div class="product-info">
-        <h3 class="product-title">Базовая черная футболка</h3>
-        <p class="product-category">Категория: Верх</p>
-        <p class="product-price">5000 KZT</p>
-        <button class="add-to-cart-btn">Добавить в корзину</button>
-      </div>
-    </div>
-  </section>
-
-  </main>
-</body>
 </html>
