@@ -5,9 +5,8 @@
   <title>Title</title>
   <link
     rel="stylesheet"
-    href="my%20shop/style.css"
+    href="myshop/style.css"
   >
-  <script src="my%20shop/script.js"></script>
 </head>
 <body>
 <header>
@@ -22,15 +21,17 @@
   <h1>Наш каталог</h1>
 
 <div class="filter-buttons" style="margin-bottom: 20px;">
-  <button onclick="filterProducts('all')">Все</button>
+  <button class="active" onclick="filterProducts('all')">Все</button>
   <button onclick="filterProducts('t-shirts')">Футболки</button>
   <button onclick="filterProducts('pants')">Брюки</button>
-  <button onclick="filterProducts('hoodie')">Худи</button>
+  <button onclick="filterProducts('hoodies')">Худи</button>
 </div>
 
 <div id="products-grid" class="product-list"></div>
     </main>
 
+
+<script src="myshop/script.js"></script>
   </body>
 
 </html>

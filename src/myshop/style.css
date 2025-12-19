@@ -34,19 +34,52 @@ header {
 }
 
 .product-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
+  transition: 0.3s;
 }
 
-.product-image {
+#products-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card:hover {
+  box-shadow: 0.4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  display: block;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  color: #555;
+  font-weight: bold;
+}
+
+.product-card button{
+  margin-top: auto;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
 .product-info {
@@ -70,34 +103,35 @@ header {
   transition: background-color 0.3s;
 }
 
-.product-grid {
-  display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 30px;
-  padding: 40px 50px;
-}
-
-.hero {
-  background-image: url("my%20shop/images/images.jpg");
+.hero-section {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/rasprodazha-960x330.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: white;
   text-align: center;
-  padding: 100px 20px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-radius: 15px;
+  margin: 20px;
 }
 
-.hero h1 {
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
   font-size: 3.5em;
-  margin-bottom: 10px;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.hero p {
+.hero-section p {
   font-size: 1.2em;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -111,12 +145,12 @@ gap: 30px;
   padding: 15px 30px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 1.1em;
   transition: background-color 0.3s;
 }
 
 .cta-button:hover {
   background-color: #e64a19;
+  transform: scale(1.05);
 }
 
 .container {
@@ -143,4 +177,50 @@ gap: 30px;
 .toast.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 25px;
+  border: 2px solid #333;
+  background-color: transparent;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+  .filter-buttons button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .filter-buttons button.active {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+/*Для планшетов*/
+@media (max-width: 992px) {
+  #product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Для телефонов*/
+@media (max-width: 600px) {
+  #product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

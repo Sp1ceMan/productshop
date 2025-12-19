@@ -5,11 +5,10 @@
   <title>Title</title>
   <link
     rel="stylesheet"
-    href="my%20shop/style.css"
-  >
-  <script src="my%20shop/script.js"></script>
+    href="myshop/style.css">
 </head>
 <body>
+
 <header>
   <div class="logo">Магазин одежды</div>
   <nav class="main-nav">
@@ -20,21 +19,26 @@
 </header>
 
 <main>
-  <section class="hero">
+  <section class="hero-section">
+    <div class="hero-content">
     <h1>Новая Коллекция Зима 2026</h1>
     <p>Скидки до 40% на избранные модели. Время обновляться!</p>
     <a href="product.html" class="cta-button">Перейти к покупкам</a>
+    </div>
   </section>
 
   <section class="featured-products container">
     <h2>Избранные модели</h2>
-    <div class="product-grid">
+    <div id="products-grid" class="product-grid">
     </div>
+
     <div style="text-align: center; padding-top: 30px;">
       <a href="product.html" class="view-all-button">Смотреть все товары</a>
     </div>
-    <div></div>
   </section>
 </main>
+
+
+<script src="myshop/script.js"></script>
 </body>
 </html>
