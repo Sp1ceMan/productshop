@@ -6,16 +6,20 @@
   <link
     rel="stylesheet"
     href="myshop/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <header>
+  <div class="header-container">
   <div class="logo">Магазин одежды</div>
   <nav class="main-nav">
     <a href="index.html">Главная</a>
     <a href="product.html">Каталог</a>
-    <a href="cart.html">Корзина</a>
+    <a href="cart.html" class="cart-link">Корзина
+    <span class="cart-counter"></span></a>
   </nav>
+  </div>
 </header>
 
 <main>
@@ -39,6 +43,6 @@
 </main>
 
 
-<script src="myshop/script.js"></script>
+<script src="myshop/script.js" defer></script>
 </body>
 </html>
